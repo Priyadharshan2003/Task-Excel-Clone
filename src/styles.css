@@ -1,0 +1,64 @@
+/* Global styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85); /* Dark text color for light mode */
+  background-color: #f0f2f5;
+}
+
+.app {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Spreadsheet specific styles */
+.spreadsheet-container {
+  overflow: auto;
+  color: rgba(0, 0, 0, 0.85); /* Ensure dark text in spreadsheet */
+}
+
+.spreadsheet-grid {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.cell {
+  color: rgba(0, 0, 0, 0.85); /* Ensure dark text in cells */
+}
+
+.cell.calculated {
+  background-color: #f0f8ff;
+  cursor: not-allowed;
+}
+
+.cell.editable:hover {
+  background-color: #f9f9f9;
+}
+
+.cell.selected {
+  background-color: #e6f7ff !important;
+  outline: 2px solid #1890ff;
+  z-index: 1;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.formula-indicator {
+  font-size: 10px;
+  color: #0077cc;
+  margin-left: 3px;
+  vertical-align: super;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .spreadsheet-grid {
+    overflow-x: auto;
+  }
+} 
