@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@types/xlsx": "^0.0.36",
     "excel-clone": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

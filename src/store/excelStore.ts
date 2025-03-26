@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { CellData, RowData } from '../types';
+import { RowData } from '../types';
 
 interface ExcelStore {
   data: RowData[];
